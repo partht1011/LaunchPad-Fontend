@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './assets/svgs/logo.svg';
 import './styles/App.css';
-
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import IDODetail from './pages/IDODetail';
+import HomePage from './pages/Home';
+import CreateIDO from './pages/CreateIDO';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col min-h-screen bg-primary ">
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/create-ido" element={<CreateIDO />} />
+        <Route path="/ido/:poolAddress" element={<IDODetail />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
