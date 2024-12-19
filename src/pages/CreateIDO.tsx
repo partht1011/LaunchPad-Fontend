@@ -34,7 +34,7 @@ function CreateIDO() {
 
   // Sale Token Description State Variable
   const [description, setDescription] = useState(
-    'Innovative and secure digital asset with the ability to mint, sell, and transfer tokens on a blockchain.'
+    'Secure digital asset with the ability to mint, sell, and transfer tokens on a blockchain.'
   );
 
   const onCreateIDO = async () => {
