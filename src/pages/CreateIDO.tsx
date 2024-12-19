@@ -26,10 +26,10 @@ function CreateIDO() {
     Math.floor((Date.now() - 1000 * 60 * 60 * 24 * 1) / 1000) + ''
   );
   const [endTime, setEndTime] = useState(
-    Math.floor((Date.now() + 1000 * 60 * 5) / 1000) + ''
+    Math.floor((Date.now() + 1000 * 60 * 2) / 1000) + ''
   );
   const [claimTime, setClaimTime] = useState(
-    Math.floor((Date.now() + 1000 * 60 * 6) / 1000) + ''
+    Math.floor((Date.now() + 1000 * 60 * 4) / 1000) + ''
   );
 
   // Sale Token Description State Variable
